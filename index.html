@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<title>你能停留几秒?</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="shadow">
+		<ul class="score-ban">
+			<li class="score-title">你的十次时间为:</li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-item"></li>
+			<li class="score-avg">平均时间:&nbsp;<span></span>秒</li>
+			<li class="score-check"></li>
+			<li><button class="restart-button">再来一发</button></li>
+		</ul>
+	</div>
+	<section class="wrap-layer">
+		<button class="start-button">来点我啊</button>
+	</section>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/game.js"></script>
+	<script>
+	if(/Mobile/i.test(window.navigator.userAgent)){
+		$("body>*").remove();
+		$("body").append("<p style='line-height:30px;text-indent:2em;'>请前往电脑端浏览器体验游戏，谷歌,火狐等浏览器体验更佳。</p>");
+	}
+	</script>
+</body>
+</html>

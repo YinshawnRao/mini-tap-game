@@ -1,0 +1,29 @@
+@charset "UTF-8";
+html { font-size: 125%; }
+
+html, body { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; background: #57ff9f; height: 100%; }
+
+input, select, button { -webkit-appearance: none; outline: none; }
+
+ul, li { list-style: none; margin: 0; padding: 0; }
+
+.wrap-layer { position: relative; width: 100%; height: 100%; }
+.wrap-layer .start-button { position: absolute; left: 50%; top: 50%; margin-left: -2.5rem; margin-top: -1.25rem; width: 5rem; height: 2.5rem; border: 0; border-radius: 1.25rem; background: #fff; font-size: .8rem; transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); -webkit-transition: all .5s ease-in-out 0s; transition: all .5s ease-in-out 0s; }
+
+.shadow { position: fixed; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 999; display: none; }
+.shadow .score-ban { width: 10rem; position: absolute; left: 50%; background: #fff; border-radius: .5rem; padding: .5rem; animation: nova 1s ease 0s forwards; -webkit-animation: nova 1s ease 0s forwards; }
+@keyframes nova { 0% { transform: translate3d(-50%, -100%, 0); -webkit-transform: translate3d(-50%, -100%, 0); }
+  100% { transform: translate3d(-50%, 10px, 0); -webkit-transform: translate3d(-50%, 10px, 0); } }
+@-webkit-keyframes nova { 0% { transform: translate3d(-50%, -100%, 0); -webkit-transform: translate3d(-50%, -100%, 0); }
+  100% { transform: translate3d(-50%, 10px, 0); -webkit-transform: translate3d(-50%, 10px, 0); } }
+@keyframes denova { 0% { transform: translate3d(-50%, 10px, 0); -webkit-transform: translate3d(-50%, 10px, 0); }
+  100% { transform: translate3d(-50%, -100%, 0); -webkit-transform: translate3d(-50%, -100%, 0); } }
+@-webkit-keyframes denova { 0% { transform: translate3d(-50%, 10px, 0); -webkit-transform: translate3d(-50%, 10px, 0); }
+  100% { transform: translate3d(-50%, -100%, 0); -webkit-transform: translate3d(-50%, -100%, 0); } }
+.shadow .score-ban.denova { animation: denova 1s ease 0s forwards; -webkit-animation: denova 1s ease 0s forwards; }
+.shadow .score-ban li { text-align: center; font-size: .8rem; line-height: 1.4rem; }
+.shadow .score-ban li.score-item:after { content: "秒"; }
+.shadow .score-ban li.score-title { font-size: 1rem; line-height: 2.8rem; }
+.shadow .score-ban li.score-avg { line-height: 1.8rem; }
+.shadow .score-ban li.score-check { color: #f00; line-height: 1.6rem; }
+.shadow .score-ban .restart-button { width: 5rem; height: 1.5rem; border: 0; border-radius: .25rem; background: #1391ff; color: #fff; cursor: pointer; }
