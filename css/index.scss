@@ -60,6 +60,11 @@ ul,li{
 	background: $shadowColor;
 	z-index: 999;
 	display: none;
+	.fork{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 	.score-ban{
 		width: 10rem;
 		position: absolute;
