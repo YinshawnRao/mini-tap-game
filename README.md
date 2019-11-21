@@ -1,5 +1,1 @@
-# 我的第一个托管于github的小游戏
-
-游戏在我的个人主页首页
-
-游戏将不断完善，欢迎提出好的建议
+## a testing mini game for fun
